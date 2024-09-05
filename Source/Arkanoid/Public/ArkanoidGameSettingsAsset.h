@@ -6,6 +6,18 @@
 #include "Engine/DataAsset.h"
 #include "ArkanoidGameSettingsAsset.generated.h"
 
+USTRUCT(Blueprintable)
+struct FPowerUpData
+{
+    GENERATED_BODY()
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    TSubclassOf<AActor> PowerUpClass;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
+    float Chance;
+};
+
 UCLASS(Blueprintable, BlueprintType)
 class ARKANOID_API UArkanoidGameSettingsAsset : public UDataAsset
 {
@@ -47,4 +59,7 @@ public:
     
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="PowerUp")
     float FallSpeed;
+    
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="PowerUp")
+    TArray<FPowerUpData> PowerUpData;
 };

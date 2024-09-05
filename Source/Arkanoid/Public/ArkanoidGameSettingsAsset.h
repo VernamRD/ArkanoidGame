@@ -18,6 +18,9 @@ public:
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Game");
     int32 BallsCount;
 
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Game")
+    float GameAreaWidth;
+
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Ball");
     float DefaultBallVelocity;
 

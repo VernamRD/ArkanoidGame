@@ -23,4 +23,19 @@ public:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Ball");
     float DefaultBallSize;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Block");
+    float DefaultBlockWidth;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Block");
+    float DefaultBlockHeight;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Block");
+    int32 BlockScore;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Block");
+    int32 BlockPerHPScoreModifier;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Block");
+    TArray<FLinearColor> ColorPerHP;
 };

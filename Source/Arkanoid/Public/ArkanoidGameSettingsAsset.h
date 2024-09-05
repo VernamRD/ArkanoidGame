@@ -41,4 +41,10 @@ public:
 
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Block");
     TArray<FLinearColor> ColorPerHP;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="PowerUp")
+    float PowerUpSize;
+    
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="PowerUp")
+    float FallSpeed;
 };

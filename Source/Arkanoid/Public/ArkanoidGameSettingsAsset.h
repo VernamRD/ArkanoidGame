@@ -62,4 +62,7 @@ public:
     
     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="PowerUp")
     TArray<FPowerUpData> PowerUpData;
+
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, Category="Game")
+    TArray<TSoftObjectPtr<UDataTable>> Levels;
 };
